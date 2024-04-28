@@ -1,0 +1,30 @@
+@media screen and (min-width: 500px) {
+
+    main {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 2fr .5fr 1fr;
+        grid-template-rows: 100px auto;
+        max-width: 1300px;
+    }
+
+    section {
+        display: grid;
+        grid-template-rows: 70px auto;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #6f7364;
+        background-color: #D1DCE8;
+    }
+
+    .learning-card {
+        grid-column: 1/2;
+        margin-left: 50px;
+    }
+
+    .info-card {
+        grid-column: 3/4;
+        margin-right: 50px;
+    }
+
+}

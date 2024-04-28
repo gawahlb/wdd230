@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 245, 245);
+    font-family: "Zilla Slab", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: #1C67E6;
+    color: rgb(250, 245, 245);
+    height: 200px;
+    font-family: "Pacifico", sans-serif;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+header h1 {
+    display: block;
+    margin-right: auto;
+    font-size: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    background-color: #D3E3DC;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style-type: none;
+}
+
+nav li {
+    padding: 1rem;
+    margin: auto;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+
+nav a:hover {
+    background-color: #00B6E5;
+    color: #D3E3DC;
+    padding: 32.5px;
+}
+
+.classname {
+    padding-left: 100px;
+    border-bottom: 2px solid black;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-gap: 1rem;
+    max-width: 1300px;
+}
+
+main h1 {
+    grid-row: 1/2;
+    grid-column: 1/4;
+}
+
+section {
+    display: grid;
+    grid-template-rows: 70px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #6f7364;
+    background-color: #D1DCE8;
+}
+
+section h2 {
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #D1DCE8;
+    max-width: 100%;
+}
+
+section p {
+    padding-left: 50px;
+    padding-bottom: 30px;
+}
+
+section ul {
+    padding-left: 50px;
+    padding-bottom: 30px;
+}
+
+.learning-card {
+    grid-column: 2/3;
+}
+
+.info-card {
+    grid-column: 2/3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #1C67E6;
+    color: rgb(250, 245, 245);
+}
