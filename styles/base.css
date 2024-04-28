@@ -100,6 +100,7 @@ section p {
 section ul {
     padding-left: 50px;
     padding-bottom: 30px;
+    list-style-type: none;
 }
 
 .learning-card {
