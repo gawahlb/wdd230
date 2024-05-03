@@ -17,6 +17,37 @@
         background-color: #D1DCE8;
     }
 
+    nav {
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
+        background-color: #D3E3DC;
+    }
+
+    nav ul {
+        display: inline-flex;
+        list-style-type: none;
+    }
+
+    nav li {
+        padding: 0.5rem;
+        margin: auto;
+    }
+
+    nav a {
+        display: block;
+        text-decoration: none;
+        font-size: 30px;
+        color: black;
+    }
+
+    nav a:hover {
+        background-color: #00B6E5;
+        color: #D3E3DC;
+        padding: 10px;
+    }
+
     .learning-card {
         grid-column: 1/2;
         margin-left: 50px;
@@ -27,4 +58,7 @@
         margin-right: 50px;
     }
 
+    #menu {
+        display: none;
+    }
 }

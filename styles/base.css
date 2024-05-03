@@ -29,36 +29,6 @@ header h1 {
     font-size: 50px;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    justify-items: center;
-    align-items: center;
-    background-color: #D3E3DC;
-}
-
-nav ul {
-    display: inline-flex;
-    list-style-type: none;
-}
-
-nav li {
-    padding: 1rem;
-    margin: auto;
-}
-
-nav a {
-    text-decoration: none;
-    font-size: 30px;
-    color: black;
-}
-
-nav a:hover {
-    background-color: #00B6E5;
-    color: #D3E3DC;
-    padding: 32.5px;
-}
-
 .classname {
     padding-left: 100px;
     border-bottom: 2px solid black;
@@ -117,4 +87,51 @@ footer {
     padding: 10px;
     background-color: #1C67E6;
     color: rgb(250, 245, 245);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+}
+
+nav a {
+    display: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    background-color: #00B6E5;
+    color: #D3E3DC;
+}
+
+.open a {
+    display: block;
 }
