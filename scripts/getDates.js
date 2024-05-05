@@ -23,13 +23,9 @@ const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
 const body = document.querySelector("body");
 const header = document.querySelector("header");
-const nav = document.querySelector("nav");
-const ul = document.querySelector("ul");
 
 modeButton.addEventListener("click", () => {
     body.classList.toggle('dark-mode')
     main.classList.toggle('dark-mode');
     header.classList.toggle('header-dark-mode');
-    nav.classList.toggle('dark-mode');
-    ul.classList.toggle('dark-mode');
 });
