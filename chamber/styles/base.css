@@ -1,0 +1,13 @@
+* {
+    background-color: #FFE8C5;
+}
+
+nav,
+ul,
+li {
+    background-color: #FABB64;
+}
+
+nav a:hover {
+    background-color: #FAEFA1;
+}
