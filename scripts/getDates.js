@@ -36,4 +36,4 @@ modeButton.addEventListener("click", () => {
     infoH2.classList.toggle('section-dark-mode');
     h2.classList.toggle('section-dark-mode');
     infoCard.classList.toggle('section-dark-mode');
-});
+}); 
