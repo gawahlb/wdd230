@@ -1,0 +1,74 @@
+@media screen and (min-width: 500px) {
+    nav {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 30px;
+        background-color: transparent;
+        width: 100%;
+        opacity: 70%;
+    }
+
+    .hero-image {
+        width: 100%;
+        min-height: 150px;
+    }
+
+    nav,
+    ul,
+    li {
+        background-color: #FABB64;
+    }
+
+    nav a:hover {
+        background-color: #FAEFA1;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+    }
+
+    nav li {
+        display: inline-block;
+        font-size: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .description {
+        grid-column: 1/4;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .news-card {
+        grid-column: 1/2;
+    }
+
+    .learn-card {
+        grid-column: 2/3;
+    }
+
+    .weather-card {
+        grid-column: 3/4;
+    }
+
+    #lower-section {
+        display: grid;
+        margin-top: 20px;
+        grid-column: 1/4;
+    }
+
+    .who-card {
+        grid-column: 1/2;
+    }
+
+    .company-card {
+        grid-column: 2/3;
+    }
+}
