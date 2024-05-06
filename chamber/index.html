@@ -11,6 +11,11 @@
     <meta property="og:description" content="Website for the City of Mesa Chamber of Commerce." />
     <meta property="og:image" content="https://images.app.goo.gl/8uxcSqRqsruBHL8u8" />
     <meta property="og:url" content="https://gawahlb.github.io/wdd230/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marcellus&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -34,22 +39,40 @@
     <main>
         <h2 class="description">The purpose of this chamber is to ensure the economic growth and prosperity of the City
             of Mesa. The City of Mesa Chamber of Commerce works towards providing opportunities to help businesses and
-            members have a stronger voice iwthin the community for the betterment of the city and all who reside in it.
+            members have a stronger voice within the community for the betterment of the city and all who reside in it.
         </h2>
 
-        <section>
+        <section class="news-card">
             <h2>News</h2>
+            <p>News item 1</p>
+            <p>News item 2</p>
         </section>
-        <section>
+        <section class="learn-card">
             <h2>Learn about Mesa</h2>
+            <p>Short description of Mesa from a business and economic standpoint.</p>
         </section>
-        <section>
-            <h2>Who we are</h2>
+        <section class="weather-card">
+            <h2>Weather</h2>
         </section>
+        <div id="lower-section">
+            <section class="who-card">
+                <h2>Who We Are</h2>
+                <p>Description of what the chamber of commerce does and who is involved.</p>
+            </section>
+            <section class="company-card">
+                <h2>Company Spotlights</h2>
+                <h3>Company 1</h3>
+                <p>Spotlight for Company 1</p>
+                <h3>Company 2</h3>
+                <p>Spotlight for Company 2</p>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; Chamber of Commerce for the City of Mesa, AZ</p>
+        <p>Mesa Chamber of Commerce Contact Info</p>
+        <p>Gabriel Wahlberg - WDD230 Chamber Project</p>
+        <p>Last modified on: <span id="lastModified"></span></p>
     </footer>
 
 </body>
