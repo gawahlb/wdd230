@@ -1,0 +1,30 @@
+main {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    background: #000;
+    animation: fade 15s;
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    text-align: center;
+}
