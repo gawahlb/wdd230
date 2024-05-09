@@ -36,4 +36,18 @@ modeButton.addEventListener("click", () => {
     infoH2.classList.toggle('section-dark-mode');
     h2.classList.toggle('section-dark-mode');
     infoCard.classList.toggle('section-dark-mode');
-}); 
+});
+
+const visitNum = document.querySelector(".visits");
+
+let numVisits = Number(window.localStorage.getItem("numVisits -ls")) || 0;
+
+if (numVisits !== 0) {
+    visitNum.textContent = numVisits;
+} else {
+    visitNum.textContent = `0`;
+}
+
+numVisits++;
+
+localStorage.setItem("numVisits-ls", numVisits);

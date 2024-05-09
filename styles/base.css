@@ -15,7 +15,7 @@ header {
     font-family: "Pacifico", sans-serif;
 }
 
-img {
+.profile-picture {
     display: block;
     margin-left: auto;
     margin-right: 50px;
@@ -159,4 +159,50 @@ nav a:hover {
 .section-dark-mode {
     background-color: #005362;
     color: white;
+}
+
+.hero-picture {
+    grid-column: 1/4;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+    text-align: center;
+}
+
+.hero-picture img {
+    width: 100%;
+    display: block;
+}
+
+.hero-label span {
+    grid-column: 1/4;
+    border-bottom: 2px solid #000;
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    font-size: 2rem;
+    font-family: "Pacifico", sans-serif;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.home-map {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    padding-bottom: 40%;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+}
+
+.home-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

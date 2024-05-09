@@ -26,7 +26,7 @@
 <body>
     <header>
         <div id="mode">Dark/Light Mode</div>
-        <img src="images/personalpicture.jpg" alt="Gabriel Wahlberg" width="110">
+        <img class="profile-picture" src="images/personalpicture.webp" alt="Gabriel Wahlberg" width="110">
         <h1>Gabriel Wahlberg</h1>
     </header>
     <button id="menu"></button>
@@ -39,6 +39,15 @@
         </ul>
     </nav>
     <main>
+        <div class="hero-picture">
+            <picture>
+                <source srcset="images/mesa_small.webp" media="(max-width: 400px)">
+                <img src="images/mesa_large.webp" alt="Mesa Temple" width="960">
+            </picture>
+        </div>
+        <div class="hero-label">
+            <span>Mesa Arizona Temple</span>
+        </div>
         <h1 class="classname">WDD 230: Web Frontend Development</h1>
         <section class="learning-card">
             <h2>Learning Activities</h2>
@@ -57,10 +66,16 @@
         <section class="info-card">
             <h2 class="info-h2">Information</h2>
             <p>Weather</p>
-            <p>Number of Visits</p>
+            <p><span class="visits-label">Number of Visits: </span><span class="visits"></span></p>
         </section>
 
     </main>
+    <div class="home-map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d50100.06273273312!2d-111.5635384068234!3d33.23081525376197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1715285836017!5m2!1sen!2sus"
+            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     <footer>
         <p>&copy;<span id="currentYear"></span> - Gabriel Wahlberg - Arizona</p>
 
