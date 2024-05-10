@@ -26,7 +26,10 @@
 
 <body>
     <div class="hero">
-        <img class="hero-image" src="images/mesa-skyline1.png" alt="City of Mesa skyline">
+        <picture class="hero-image">
+            <source srcset="images/mesa_skyline_small.png" media="(max-width: 500px)">
+            <img src="images/mesa_skyline_large.png" alt="City of Mesa skyline">
+        </picture>
         <div class="hero-text">
             <header>
                 <h1 class="page-header">City of Mesa, AZ - Chamber of Commerce</h1>

@@ -67,7 +67,19 @@ footer p {
     padding: .5rem;
 }
 
-/*
+.hero-text {
+    position: absolute;
+    top: 1%;
+    background-color: transparent;
+    width: 100%;
+    opacity: 70%;
+}
+
+.hero-image img {
+    width: 100%;
+    min-height: 150px;
+}
+
 nav ul {
     list-style-type: none;
 }

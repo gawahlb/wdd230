@@ -1,20 +1,13 @@
 @media screen and (min-width: 500px) {
+
     nav {
         text-align: center;
         padding: 10px;
+        display: flex;
     }
 
-    .hero-text {
-        position: absolute;
-        top: 30px;
-        background-color: transparent;
-        width: 100%;
-        opacity: 70%;
-    }
-
-    .hero-image {
-        width: 100%;
-        min-height: 150px;
+    #menu {
+        display: none;
     }
 
     nav,
@@ -31,6 +24,7 @@
         text-decoration: none;
         color: black;
         padding: 10px;
+        text-align: center;
     }
 
     nav li {
