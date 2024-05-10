@@ -9,7 +9,7 @@ body {
 
 header {
     margin-left: 3rem;
-    font-size: 17.4px;
+    font-size: 1rem;
 }
 
 body {
@@ -23,11 +23,9 @@ li {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 5%;
+    margin-right: 5%;
     max-width: 1000px;
 }
 
@@ -39,6 +37,7 @@ section {
     margin-right: 2rem;
     background-color: #FAEFA1;
     min-height: 150px;
+    margin-bottom: 5%;
 }
 
 section h2 {
@@ -72,7 +71,6 @@ footer p {
     top: 1%;
     background-color: transparent;
     width: 100%;
-    opacity: 70%;
 }
 
 .hero-image img {
@@ -82,6 +80,7 @@ footer p {
 
 nav ul {
     list-style-type: none;
+    background-color: rgba(62, 62, 62, 0.486);
 }
 
 #menu {
@@ -119,8 +118,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #00B6E5;
-    color: #D3E3DC;
+    background-color: #FAEFA1;
+    color: black;
 }
 
 .open a {
