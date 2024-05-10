@@ -38,14 +38,14 @@ modeButton.addEventListener("click", () => {
     infoCard.classList.toggle('section-dark-mode');
 });
 
-const visitNum = document.querySelector(".visits");
+const visitDisp = document.querySelector(".visits");
 
-let numVisits = Number(window.localStorage.getItem("numVisits -ls")) || 0;
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 
 if (numVisits !== 0) {
-    visitNum.textContent = numVisits;
+    visitDisp.textContent = numVisits;
 } else {
-    visitNum.textContent = `0`;
+    visitDisp.textContent = `0`;
 }
 
 numVisits++;
