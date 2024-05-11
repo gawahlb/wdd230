@@ -30,4 +30,5 @@ if (lastVisit == null) {
 
 }
 
+
 localStorage.setItem("lastVisited", today);
