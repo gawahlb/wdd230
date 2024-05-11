@@ -5,15 +5,12 @@
 
 body {
     background-color: #fff2df;
+    font-family: 'Lato', sans-serif;
 }
 
 header {
     margin-left: 3rem;
     font-size: 1rem;
-}
-
-body {
-    font-family: 'Lato', sans-serif;
 }
 
 .description {
@@ -141,4 +138,23 @@ nav a:hover {
 
 .call-to-action {
     text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+}
+
+.images {
+    display: block;
+    text-align: center;
+}
+
+.images img {
+    margin-bottom: 20px;
+    width: 100%;
 }
