@@ -157,4 +157,12 @@ nav a:hover {
 .images img {
     margin-bottom: 20px;
     width: 100%;
+    object-fit: cover;
+}
+
+.label span {
+    border: 2px solid #000;
+    font-size: 2rem;
+    background-color: rgba(166, 166, 166, 0.6);
+    color: white;
 }

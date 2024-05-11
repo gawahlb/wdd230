@@ -101,4 +101,29 @@
         grid-column-gap: 5%;
     }
 
+    .downtown div {
+        margin-top: -100px;
+        margin-bottom: 100px
+    }
+
+    .goldfield div {
+        margin-top: -100px;
+    }
+
+    .temple div {
+        margin-top: -100px;
+    }
+
+    .lake div {
+        margin-top: -100px;
+    }
+
+    .river div {
+        margin-top: -100px;
+    }
+
+    .welcome div {
+        margin-top: -100px;
+    }
+
 }
