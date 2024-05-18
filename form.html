@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form for Home Page</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development  Gabriel Wahlberg  Course Assignment Portal Form">
+    <meta name="author" content="Gabriel Wahlberg">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div id="mode">Dark/Light Mode</div>
+        <img class="profile-picture" src="images/personalpicture.webp" alt="Gabriel Wahlberg" width="110">
+        <h1>Gabriel Wahlberg</h1>
+    </header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <ul>
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="https://gawahlb.github.io/wdd230/chamber/index">Chamber</a></li>
+            <li><a href="https://gawahlb.github.io/wdd230/week01/chamber-site-plan">Site Plan</a></li>
+            <li><a href="">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <fieldset>
+            <label>Username <input type="text" id="username" name="username" required></label>
+            <label>Password <input type="password" id="password" name="password" pattern="[A-Za-z0-9]" required></label>
+            <label>Repeat Password <input type="repeat_password" id="repeat_password" name="repeat password"
+                    pattern="[A-Za-z0-9]" required></label>
+            <label>Email <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                    title="Please enter a valid emamil address"></label>
+            <label>Page Rating <input type="range" id="page_rating" name="page rating" pattern="[1-10]"
+                    step="1"></label>
+        </fieldset>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> - Gabriel Wahlberg - Arizona</p>
+
+        <p>Last modified on: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
