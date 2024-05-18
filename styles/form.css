@@ -74,6 +74,14 @@ form {
     margin: 0 0 2rem 1%;
 }
 
+.my_form input:required {
+    border-left: solid 8px red;
+}
+
+.my_form input:required:valid {
+    border-left: solid 8px green;
+}
+
 
 footer {
     text-align: center;
