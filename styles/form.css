@@ -1,0 +1,84 @@
+:root {
+    --box: 100%;
+    --header: #1C67E6;
+    --second: #D1DCE8;
+}
+
+main {
+    padding: 0;
+    min-height: 40rem;
+}
+
+form {
+    margin-left: 1rem;
+}
+
+.my_form fieldset {
+    margin: 2rem 0;
+    border: 2x solid black;
+    border-radius: 15px;
+    padding: 1rem 8% 1rem 2%;
+}
+
+.my_form label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--header);
+    font-size: 1rem;
+}
+
+.my_form div {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.my_form input[type="text"],
+.my_form input[type="password"],
+.my_form input[type="email"] {
+    background-color: var(--second);
+    display: block;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: .5rem;
+    width: var(--box);
+    max-width: 500px;
+    appearance: none;
+}
+
+.my_form input[type="range"] {
+    width: var(--box);
+    max-width: 300px;
+}
+
+#ratingvalues {
+    font-size: 1rem;
+    display: flex;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 0 0 3px;
+}
+
+#ratingvalues option {
+    flex: auto;
+}
+
+.my_form input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--header), var(--second));
+    color: white;
+    padding: .5rem;
+    border-radius: 5px;
+    max-width: 500px;
+    width: var(--box);
+    margin: 0 0 2rem 1%;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: var(--header);
+    color: rgb(250, 245, 245);
+}

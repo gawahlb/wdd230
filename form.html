@@ -8,8 +8,17 @@
     <meta name="description"
         content="WDD 230 - Web Frontend Development  Gabriel Wahlberg  Course Assignment Portal Form">
     <meta name="author" content="Gabriel Wahlberg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/form.js" defer></script>
+    <script src="scripts/getDates.js" defer></script>
 </head>
 
 <body>
@@ -21,23 +30,42 @@
     <button id="menu"></button>
     <nav class="navigation">
         <ul>
-            <li class="active"><a href="">Home</a></li>
+            <li><a href="https://gawahlb.github.io/wdd230/index">Home</a></li>
             <li><a href="https://gawahlb.github.io/wdd230/chamber/index">Chamber</a></li>
             <li><a href="https://gawahlb.github.io/wdd230/week01/chamber-site-plan">Site Plan</a></li>
-            <li><a href="">Form</a></li>
+            <li class="active"><a href="https://gawahlb.github.io/wdd230/form">Form</a></li>
         </ul>
     </nav>
     <main>
-        <fieldset>
-            <label>Username <input type="text" id="username" name="username" required></label>
-            <label>Password <input type="password" id="password" name="password" pattern="[A-Za-z0-9]" required></label>
-            <label>Repeat Password <input type="repeat_password" id="repeat_password" name="repeat password"
-                    pattern="[A-Za-z0-9]" required></label>
-            <label>Email <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
-                    title="Please enter a valid emamil address"></label>
-            <label>Page Rating <input type="range" id="page_rating" name="page rating" pattern="[1-10]"
-                    step="1"></label>
-        </fieldset>
+        <form method="get" action="record.html" class="my_form">
+            <fieldset>
+                <label>Username* <input type="text" id="username" name="username" required></label>
+                <label>Password* <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}"
+                        required></label>
+                <label>Repeat Password* <input type="password" id="repeat_password" name="repeat password"
+                        pattern="[A-Za-z0-9]{8,}" required></label>
+                <label>Email <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                        title="Please enter a valid emamil address"></label>
+                <label>Page Rating
+                    <div id="ratingvalue">1</div>
+                    <input type="range" id="page_rating" name="page rating" min="1" max="10" value="0" step="1"
+                        list="ratingvalues">
+                    <datalist id="ratingvalues">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+                </label>
+            </fieldset>
+            <input type="submit" value="Create my Account">
+        </form>
     </main>
     <footer>
         <p>&copy;<span id="currentYear"></span> - Gabriel Wahlberg - Arizona</p>
