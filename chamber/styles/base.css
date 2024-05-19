@@ -206,3 +206,112 @@ nav a:hover {
     min-height: 0;
     margin-top: 20px;
 }
+
+.memberships {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 2/4;
+    max-height: 600px;
+}
+
+.memberships section {
+    min-width: 200px;
+    width: auto;
+    padding: 1rem 5% 2rem 15%;
+    min-height: 200px;
+    border-radius: 0;
+    margin-right: 0;
+}
+
+.memberships h1 {
+    font-size: 1.5rem;
+}
+
+.form-main {
+    max-width: 100%;
+    margin: 0;
+}
+
+form {
+    margin-left: 10%;
+}
+
+.bronze,
+.gold {
+    grid-column: 2/3;
+    margin-left: 0;
+}
+
+.np,
+.bronze {
+    margin-bottom: 0;
+}
+
+.memberships section li {
+    margin-bottom: 10px;
+}
+
+.np {
+    background: rgb(185, 239, 255);
+}
+
+.bronze {
+    background-image: radial-gradient(white, rgb(230, 192, 121));
+}
+
+.silver {
+    background-image: radial-gradient(white, rgb(175, 175, 175));
+}
+
+.gold {
+    background-image: radial-gradient(white, rgb(255, 237, 132));
+}
+
+.join fieldset {
+    margin: 1rem 1rem;
+    border: 2px solid rgb(187, 187, 187);
+    padding: 1rem 8% 1rem 2%;
+}
+
+.join label {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+.join input[type="text"],
+.join input[type="email"],
+.join input[type="tel"] {
+    background-color: rgb(248, 248, 248);
+    display: block;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: .5rem;
+    width: 100%;
+    max-width: 500px;
+    appearance: none;
+}
+
+.join input[type="submit"] {
+    border: none;
+    background-image: radial-gradient(rgb(240, 240, 240), rgb(206, 206, 206));
+    padding: .5rem;
+    border-radius: 5px;
+    max-width: 4800px;
+    width: 94%;
+    margin: 0 0 5% 2%;
+    font-size: 1.5rem;
+}
+
+.join input:required {
+    border: solid 3px red;
+}
+
+.join input:required:valid {
+    border: solid 3px green;
+}
+
+.thank-you h1 {
+    grid-column: 1/4;
+    text-align: center;
+}

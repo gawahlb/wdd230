@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City of Mesa Chamber of Commerce</title>
+    <meta name="description" content="City of Mesa Chamber of Commerce">
+    <meta name="author" content="Gabriel Wahlberg">
+    <meta property="og:title" content="City of Mesa Chamber of Commerce" />
+    <meta property="og:description" content="Website for the City of Mesa Chamber of Commerce." />
+    <meta property="og:image" content="https://images.app.goo.gl/8uxcSqRqsruBHL8u8" />
+    <meta property="og:url" content="https://gawahlb.github.io/wdd230/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marcellus&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/chamber.js" defer></script>
+</head>
+
+
+<body>
+    <div class="hero">
+        <picture class="hero-image">
+            <source srcset="images/mesa_skyline_small.png" media="(max-width: 500px)">
+            <img src="images/mesa_skyline_large.png" alt="City of Mesa skyline">
+        </picture>
+        <div class="hero-text">
+            <header>
+                <h1 class="page-header">City of Mesa, AZ - Chamber of Commerce</h1>
+            </header>
+
+            <button id="menu"></button>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="https://gawahlb.github.io/wdd230/chamber/index">Home</a></li>
+                    <li class="active"><a href="https://gawahlb.github.io/wdd230/chamber/join">Join!</a></li>
+                    <li><a href="https://gawahlb.github.io/wdd230/chamber/discover">Discover</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main class="form-main">
+        <form method="get" action="thankyou.html" class="join">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                <label>Title/Position <input type="text" name="title" id="title" pattern="[A-Za-z\s\-]"></label>
+                <label>Email Address* <input type="email" name="email" id="email" placeholder="example@byui.edu"
+                        required></label>
+                <label>Mobile Phone Number* <input type="tel" name="mobile" id="mobile" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label>Business/Organization Name* <input type="text" name="orgName" id="org_name" required></label>
+                <label>Business/Organization Description <input type="text" name="desc" id="desc"></label>
+                <label><input type="hidden" name="timestamp" id="timestamp"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label>NP Membership <input type="radio" id="np" name="membership" value="np"></label>
+                <label>Bronze Membership <input type="radio" id="bronze" name="membership" value="bronze"></label>
+                <label>Silver Membership <input type="radio" id="silver" name="membership" value="silver"></label>
+                <label>Gold Membership <input type="radio" id="gold" name="membership" value="gold"></label>
+            </fieldset>
+
+            <input type="submit" value="Confirm My Membership">
+
+        </form>
+        <div class="memberships">
+            <section class="np">
+                <h1>NP (Nonprofit) Membership Details</h1>
+                <ul>
+                    <li>No cost membership</li>
+                    <li>10% off admission to all chamber events.</li>
+                    <li>Access to one chamber training per quarter.</li>
+                </ul>
+            </section>
+            <section class="bronze">
+                <h1>Bronze Membership Details</h1>
+                <ul>
+                    <li>$150/month</li>
+                    <li>25% off admission to all chamber events.</li>
+                    <li>Access to all chamber trainings.</li>
+                    <li>Advertisement in bronze section of chamber magazines.</li>
+                </ul>
+            </section>
+            <section class="silver">
+                <h1>Silver Membership Details</h1>
+                <ul>
+                    <li>$300/month</li>
+                    <li>50% off admission to all chamber events.</li>
+                    <li>Access to all chamber trainings.</li>
+                    <li>Advertisement in Silver section of chamber magazines.</li>
+                    <li>Small advertisement on chamber website.</li>
+                </ul>
+            </section>
+            <section class="gold">
+                <h1>Gold Membership Details</h1>
+                <ul>
+                    <li>$500/month</li>
+                    <li>Free admission to all chamber events.</li>
+                    <li>Access to all chamber trainings.</li>
+                    <li>Advertisement in Gold section of chamber magazines.</li>
+                    <li>Headline advertisement on chamber website.</li>
+                    <li>Acknowledgements in all chamber events.</li>
+                </ul>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <p id="timestamp"></p>
+        <p>Phone Number: 480-000-0000</p>
+        <p>Email Address: chamber@mesacc.gov</p>
+        <p>Gabriel Wahlberg - WDD230 Chamber Project</p>
+        <p>Last modified on: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>

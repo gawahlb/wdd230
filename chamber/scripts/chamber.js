@@ -32,3 +32,20 @@ if (lastVisit == null) {
 
 
 localStorage.setItem("lastVisited", today);
+
+const title = document.querySelector("#title");
+
+function titleValidation() {
+    if (title.length < 7) {
+        title.setCustomValidity("Field should be at least 7 characters long");
+    } else {
+        title.setCustomValidity("");
+    }
+}
+
+title.onkeyup = titleValidation;
+
+const date = new Date();
+const timestamp = document.querySelector("#timestamp");
+
+timestamp.textContent(date.today);
