@@ -2,7 +2,7 @@
 
     nav {
         text-align: center;
-        padding: 10;
+        padding: 10px;
         display: flex;
         background-color: rgba(250, 187, 100, 0.7);
     }
