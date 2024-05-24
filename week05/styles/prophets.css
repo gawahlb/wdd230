@@ -1,0 +1,54 @@
+* {
+    margin: auto;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(226, 226, 255);
+}
+
+section {
+    background-color: rgb(206, 206, 255);
+    text-align: center;
+    border: 1px solid black;
+    min-height: 350px;
+}
+
+img {
+    margin: 1rem 0 1rem 0;
+    box-shadow: 5px 5px 10px black;
+    max-width: 50%;
+    height: auto;
+}
+
+#cards {
+    width: 100%;
+    margin-top: 4%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: blue;
+    color: white;
+    font-family: "Great Vibes", sans-serif;
+    font-size: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: blue;
+    margin-top: 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#cards h2 {
+    margin: 5px 0 5px 0;
+    font-family: "Great Vibes", sans-serif;
+}
