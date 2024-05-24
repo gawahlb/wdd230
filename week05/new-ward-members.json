@@ -1,0 +1,23 @@
+{
+    "familyName": "Wahlberg",
+    "moveInDate": "05/24/2024",
+    "familySize": 3,
+    "visitMade": true,
+    "members": [
+        {
+            "name": "Dad",
+            "gender": "M",
+            "birthdate": "01/01/1990"
+        },
+        {
+            "name": "Mom",
+            "gender": "F",
+            "birthdate": "01/01/1990"
+        },
+        {
+            "name": "Daughter",
+            "gender": "F",
+            "birthdate": "01/01/2018"
+        }
+    ]
+}
