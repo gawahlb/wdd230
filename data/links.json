@@ -1,0 +1,42 @@
+{
+    "weeks": [
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "https://gawahlb.github.io/wdd230/week02/design",
+                    "title": "CSS Design"
+                },
+                {
+                    "url": "https://codepen.io/gawahlb/pen/yLrWwVd",
+                    "title": "Hamburger Menu"
+                },
+                {
+                    "url": "https://gawahlb.github.io/wdd230/week02/bom",
+                    "title": "BOM Top 10"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP Image"
+                },
+                {
+                    "url": "https://gawahlb.github.io/wdd230/week03/lazyload",
+                    "title": "Lazy Load"
+                },
+                {
+                    "url": "https://gawahlb.github.io/wdd230/week03/responsive-images",
+                    "title": "Responsive Images"
+                },
+                {
+                    "url": "https://gawahlb.github.io/wdd230/week03/updated-bom",
+                    "title": "Web Storage API"
+                }
+            ]
+        }
+    ]
+}
