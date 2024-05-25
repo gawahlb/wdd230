@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City of Mesa Chamber of Commerce</title>
+    <meta name="description" content="City of Mesa Chamber of Commerce">
+    <meta name="author" content="Gabriel Wahlberg">
+    <meta property="og:title" content="City of Mesa Chamber of Commerce" />
+    <meta property="og:description" content="Website for the City of Mesa Chamber of Commerce." />
+    <meta property="og:image" content="https://images.app.goo.gl/8uxcSqRqsruBHL8u8" />
+    <meta property="og:url" content="https://gawahlb.github.io/wdd230/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marcellus&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/chamber.js" defer></script>
+</head>
+
+
+<body>
+    <div class="hero">
+        <picture class="hero-image">
+            <source srcset="images/mesa_skyline_small.png" media="(max-width: 500px)">
+            <img src="images/mesa_skyline_large.png" alt="City of Mesa skyline">
+        </picture>
+        <div class="hero-text">
+            <header>
+                <h1 class="page-header">City of Mesa, AZ - Chamber of Commerce</h1>
+            </header>
+
+            <button id="menu"></button>
+            <nav class="navigation">
+                <ul>
+                    <li class="active"><a href="https://gawahlb.github.io/wdd230/chamber/index">Home</a></li>
+                    <li><a href="https://gawahlb.github.io/wdd230/chamber/join">Join!</a></li>
+                    <li><a href="https://gawahlb.github.io/wdd230/chamber/discover">Discover</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <div id="cards"></div>
+    </main>
+    <div class="call-to-action">
+        <a href="#" class="action">Request Membership Info!</a>
+    </div>
+
+    <footer>
+        <p>Phone Number: 480-000-0000</p>
+        <p>Email Address: chamber@mesacc.gov</p>
+        <p>Gabriel Wahlberg - WDD230 Chamber Project</p>
+        <p>Last modified on: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
