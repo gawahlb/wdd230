@@ -4,7 +4,7 @@
             "name": "The Orange Patch",
             "address": "3565 N Gilbert Rd, Mesa, AZ 85213",
             "number": "480-962-4490",
-            "website": "orangepatch.com",
+            "website": "https://www.orangepatch.com/",
             "image": "https://www.orangepatch.com/assets/img/logo-u79.png",
             "level": "Gold",
             "startDate": "2008"
@@ -13,7 +13,7 @@
             "name": "Jalapeno Buck's",
             "address": "3434 N Val Vista Dr, Mesa, AZ 85213",
             "number": "480-459-3050",
-            "website": "jalapenobucks.com",
+            "website": "https://www.jalapenobucks.com/",
             "image": "http://jalapenobucks.com/wp-content/uploads/2017/01/big-header-red.png",
             "level": "Bronze",
             "startDate": "2019"
@@ -22,7 +22,7 @@
             "name": "Scootin' Boots Dance Hall",
             "address": "515 N Stapley Dr #103, Mesa, AZ 85203",
             "number": "480-450-1432",
-            "website": "scootinbootsdancehallmesa.com",
+            "website": "https://www.scootinbootsdancehallmesa.com/",
             "image": "https://rlfiles1.azureedge.net/5811da22-67b2-4100-8869-b6c91b194c4a/c137f00b-4ab8-4c5e-8623-f72f33e398db/logo.png",
             "level": "Silver",
             "startDate": "2020"
@@ -31,7 +31,7 @@
             "name": "Backyard Taco",
             "address": "1524 E University Dr, Mesa, AZ 85203",
             "number": "480-464-8226",
-            "website": "backyardtaco.com",
+            "website": "https://www.backyardtaco.com/",
             "image": "https://backyardtaco.com/wp-content/uploads/2021/08/byt-red-logo.png",
             "level": "Bronze",
             "startDate": "2018"
@@ -40,7 +40,7 @@
             "name": "Arizona Commemorative Air Force Museum",
             "address": "2017 N Greenfield Rd, Mesa, AZ 85215",
             "number": "480-924-1940",
-            "website": "azcaf.org",
+            "website": "https://www.azcaf.org/",
             "image": "https://www.azcaf.org/wp-content/uploads/2016/09/airbase-icon.png",
             "level": "Gold",
             "startDate": "2004"
@@ -49,7 +49,7 @@
             "name": "Home Run Stadium",
             "address": "1829 E Main St, Mesa, AZ 85203",
             "number": "480-844-0489",
-            "website": "mesabattingcages.info",
+            "website": "https://www.mesabattingcages.info/",
             "image": "https://mesabattingcages.info/v2/wp-content/uploads/2016/04/HRS_logo-190x70.gif",
             "level": "Bronze",
             "startDate": "2000"
@@ -58,7 +58,7 @@
             "name": "Organ Stop Pizza",
             "address": "1149 E Southern Ave, Mesa, AZ 85204",
             "number": "480-813-5700",
-            "website": "organstoppizza.com",
+            "website": "https://www.organstoppizza.com/",
             "image": "https://organstoppizza.com/wp-content/uploads/2022/12/SVG.svg",
             "level": "Silver",
             "startDate": "1998"
