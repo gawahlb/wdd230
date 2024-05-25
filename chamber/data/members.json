@@ -1,13 +1,13 @@
 {
     "companies": [
         {
-            "name": "Orange Patch",
+            "name": "The Orange Patch",
             "address": "3565 N Gilbert Rd, Mesa, AZ 85213",
             "number": "480-962-4490",
             "website": "orangepatch.com",
             "image": "https://www.orangepatch.com/assets/img/logo-u79.png",
             "level": "Gold",
-            "member-since": "2008"
+            "start-date": "2008"
         },
         {
             "name": "Jalapeno Buck's",
