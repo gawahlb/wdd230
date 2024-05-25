@@ -326,15 +326,19 @@ form {
     margin-top: 4%;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit(minmax(300px, 1fr)));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 #directory-main section {
     text-align: center;
     min-height: 350px;
     max-width: 400px;
+    box-shadow: 5px 5px 10px rgb(133, 133, 133);
 }
 
 #directory-main img {
     margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 200px;
+    height: auto;
 }

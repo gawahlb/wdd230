@@ -16,7 +16,7 @@ const displayCompany = (companies) => {
         let logo = document.createElement("img");
         let address = document.createElement("p");
         let number = document.createElement("p");
-        let website = document.createElement("p");
+        let website = document.createElement("a");
         let level = document.createElement("p");
         let memberSince = document.createElement("p");
 
@@ -28,6 +28,7 @@ const displayCompany = (companies) => {
         address.textContent = `${company.address}`;
         number.textContent = `${company.number}`;
         website.textContent = `${company.website}`
+        website.setAttribute = ('href', company.website);
         level.textContent = `Membership level: ${company.level}`
         memberSince.textContent = `Member since: ${company.startDate}`
 
