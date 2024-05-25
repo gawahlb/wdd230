@@ -7,7 +7,7 @@
             "website": "orangepatch.com",
             "image": "https://www.orangepatch.com/assets/img/logo-u79.png",
             "level": "Gold",
-            "start-date": "2008"
+            "startDate": "2008"
         },
         {
             "name": "Jalapeno Buck's",
@@ -16,7 +16,7 @@
             "website": "jalapenobucks.com",
             "image": "http://jalapenobucks.com/wp-content/uploads/2017/01/big-header-red.png",
             "level": "Bronze",
-            "start-date": "2019"
+            "startDate": "2019"
         },
         {
             "name": "Scootin' Boots Dance Hall",
@@ -25,7 +25,7 @@
             "website": "scootinbootsdancehallmesa.com",
             "image": "https://rlfiles1.azureedge.net/5811da22-67b2-4100-8869-b6c91b194c4a/c137f00b-4ab8-4c5e-8623-f72f33e398db/logo.png",
             "level": "Silver",
-            "start-date": "2020"
+            "startDate": "2020"
         },
         {
             "name": "Backyard Taco",
@@ -34,7 +34,7 @@
             "website": "backyardtaco.com",
             "image": "https://backyardtaco.com/wp-content/uploads/2021/08/byt-red-logo.png",
             "level": "Bronze",
-            "start-date": "2018"
+            "startDate": "2018"
         },
         {
             "name": "Arizona Commemorative Air Force Museum",
@@ -43,7 +43,7 @@
             "website": "azcaf.org",
             "image": "https://www.azcaf.org/wp-content/uploads/2016/09/airbase-icon.png",
             "level": "Gold",
-            "start-date": "2004"
+            "startDate": "2004"
         },
         {
             "name": "Home Run Stadium",
@@ -52,7 +52,7 @@
             "website": "mesabattingcages.info",
             "image": "https://mesabattingcages.info/v2/wp-content/uploads/2016/04/HRS_logo-190x70.gif",
             "level": "Bronze",
-            "start-date": "2000"
+            "startDate": "2000"
         },
         {
             "name": "Organ Stop Pizza",
@@ -61,7 +61,7 @@
             "website": "organstoppizza.com",
             "image": "https://organstoppizza.com/wp-content/uploads/2022/12/SVG.svg",
             "level": "Silver",
-            "start-date": "1998"
+            "startDate": "1998"
         }
     ]
 }

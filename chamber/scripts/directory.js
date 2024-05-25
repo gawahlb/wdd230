@@ -24,11 +24,12 @@ const displayCompany = (companies) => {
         logo.setAttribute('src', company.image);
         logo.setAttribute('alt', `${company.name} logo`);
         logo.setAttribute('loading', 'lazy');
+        logo.setAttribute('width', "300");
         address.textContent = `${company.address}`;
         number.textContent = `${company.number}`;
         website.textContent = `${company.website}`
         level.textContent = `Membership level: ${company.level}`
-        memberSince.textContent = `Member since: ${company.start - date}`
+        memberSince.textContent = `Member since: ${company.startDate}`
 
 
         card.appendChild(name);
