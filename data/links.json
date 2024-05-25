@@ -37,6 +37,48 @@
                     "title": "Web Storage API"
                 }
             ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/gawahlb/pen/pomJWao",
+                    "title": "Pseudo-Class"
+                },
+                {
+                    "url": "week04/images/combinators-complete.png",
+                    "title": "Combinators"
+                },
+                {
+                    "url": "https://gawahlb.github.io/wdd230/week04/tablebuild",
+                    "title": "Table Build"
+                },
+                {
+                    "url": "https://gawahlb.github.io/wdd230/week04/Form-start/index",
+                    "title": "Form Design"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/gawahlb/pen/GRajqRr",
+                    "title": "CSS Pseudo-Class"
+                },
+                {
+                    "url": "https://gawahlb.github.io/wdd230/week05/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "https://gawahlb.github.io/wdd230/week05/prophets",
+                    "title": "Fetch"
+                },
+                {
+                    "url": "https://gawahlb.github.io/wdd230/week05/weather",
+                    "title": "Weather API"
+                }
+            ]
         }
     ]
 }
