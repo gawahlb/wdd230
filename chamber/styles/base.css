@@ -321,7 +321,7 @@ form {
     grid-template-columns: none;
 }
 
-#cards {
+.grid {
     width: 100%;
     margin-top: 4%;
     display: grid;
@@ -329,14 +329,18 @@ form {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-#directory-main section {
+.grid a {
+    font-size: .8rem;
+}
+
+.grid section {
     text-align: center;
     min-height: 350px;
     max-width: 400px;
     box-shadow: 5px 5px 10px rgb(133, 133, 133);
 }
 
-#directory-main img {
+.grid img {
     margin-top: 30px;
     margin-bottom: 30px;
     max-width: 200px;
@@ -347,16 +351,17 @@ form {
     all: unset;
     display: flex;
     flex-direction: column;
-    grid-template-columns: 1fr
 }
 
 .list section {
     all: unset;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr .5fr .5fr;
+    grid-template-columns: 1fr 2fr 1fr 1.5fr .5fr .5fr;
     margin: 0;
     padding: .25rem;
     background-color: rgb(214, 214, 214);
+    margin: 0 1rem;
+    align-items: center;
 }
 
 .list section img {
@@ -365,4 +370,26 @@ form {
 
 .list section:nth-child(odd) {
     background-color: #FABB64;
+}
+
+.list h2 {
+    all: unset;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.list p {
+    all: unset;
+}
+
+.toggle {
+    margin: .5rem auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+#grid,
+#list {
+    padding: 10px 1rem;
 }
