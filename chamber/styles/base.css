@@ -342,3 +342,27 @@ form {
     max-width: 200px;
     height: auto;
 }
+
+.list {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr
+}
+
+.list section {
+    all: unset;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr .5fr .5fr;
+    margin: 0;
+    padding: .25rem;
+    background-color: rgb(214, 214, 214);
+}
+
+.list section img {
+    display: none;
+}
+
+.list section:nth-child(odd) {
+    background-color: #FABB64;
+}
