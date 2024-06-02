@@ -133,7 +133,7 @@ nav a:hover {
     text-decoration: none;
     font-size: 30px;
     color: white;
-    background: radial-gradient(rgb(113, 224, 255), rgb(65, 62, 253));
+    background: radial-gradient(rgb(65, 62, 253), rgb(0, 50, 97));
 }
 
 .call-to-action {
