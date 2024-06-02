@@ -375,12 +375,17 @@ form {
 .list h2 {
     all: unset;
     border: none;
-    font-size: 1rem;
+    font-size: 1.5vw;
     font-weight: 600;
 }
 
 .list p {
     all: unset;
+    font-size: 2vw;
+}
+
+.list a {
+    font-size: 1.2vw;
 }
 
 .toggle {
