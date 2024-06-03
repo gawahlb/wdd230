@@ -52,10 +52,12 @@ timestamp.textContent(date.today);
 
 
 
+
 const currentWeather = document.querySelector('#current-temp');
 const weatherDesc = document.querySelector('#weather-desc');
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=33.41&lon=-111.82&units=imperial&appid=b621ddf1b42de9cf4add4ef7671da79c';
+const url = 'https://api.openweathermap.org/data/2.5/forecast/daily?lat=33.41&lon=-111.82&units=imperial&appid=b621ddf1b42de9cf4add4ef7671da79c';
+
 
 async function apiFetch() {
     try {
@@ -79,3 +81,33 @@ function displayResults(data) {
 }
 
 apiFetch();
+
+const highlights = document.querySelector('#spotlights');
+const companyURL = "https://gawahlb.github.io/wdd230/chamber/data/members.json";
+
+async function getCompany() {
+    const response = await fetch(companyURL);
+    const data = await response.json();
+    displayCompany(data.companies);
+}
+
+getCompany();
+
+const displayCompany = (companies) => {
+    companies.forEach((company) => {
+        let name = document.createElement("h3");
+        let logo = document.createElement("img");
+        let number = document.createElement("p");
+
+        name.textContent = `${company.name}`;
+        logo.setAttribute('src', company.image);
+        logo.setAttribute('alt', `${company.name} logo`);
+        logo.setAttribute('loading', 'lazy');
+        logo.setAttribute('width', "300");
+        number.textContent = `${company.number}`;
+
+        highlights.appendChild(name);
+        highlights.appendChild(logo);
+        highlights.appendChild(number);
+    });
+}
