@@ -56,8 +56,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const currentWeather = document.querySelector('#current-temp');
 const weatherDesc = document.querySelector('#weather-desc');
+const tomorrow = document.querySelector('#tomorrow');
+const twoDays = document.querySelector('#twoDays');
+const threeDays = document.querySelector('#threeDays');
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=33.19&lon=-111.55&units=imperial&appid=b621ddf1b42de9cf4add4ef7671da79c';
+const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=33.41&lon=-111.82&units=imperial&appid=b621ddf1b42de9cf4add4ef7671da79c';
 
 
 async function apiFetch() {
@@ -75,10 +78,16 @@ async function apiFetch() {
 }
 
 function displayResults(data) {
-    currentWeather.innerHTML = `${data.main.temp}&deg;F`;
+    currentWeather.innerHTML = `Current Temp - ${data.list[0].main.temp}&deg;F`;
 
-    let desc = data.weather[0].description;
-    weatherDesc.textContent = `${desc}`;
+    let desc = data.list[0].weather[0].description;
+    let tom = data.list[2].main.temp;
+    let twoDay = data.list[10].main.temp;
+    let threeDay = data.list[18].main.temp;
+    weatherDesc.textContent = `Description - ${desc}`;
+    tomorrow.innerHTML = ` Tomorrow - ${tom}&deg;F`;
+    twoDays.innerHTML = `2 Day - ${twoDay}&deg;F`;
+    threeDays.innerHTML = `3 Day - ${threeDay}&deg;F`;
 }
 
 apiFetch();

@@ -422,3 +422,12 @@ form {
 #closeBanner::before {
     content: "❌";
 }
+
+.news-card a {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.weather-card p {
+    margin-bottom: 10px;
+}
