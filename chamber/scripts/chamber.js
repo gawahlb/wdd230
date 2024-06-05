@@ -116,13 +116,15 @@ function getRandomIntInclusive(min, max) {
 
 const displayComp = (companies) => {
 
+    let usedInt;
+
     let i = 0
     while (i < 2) {
         let randInt = getRandomIntInclusive(0, 6);
         let randComp = companies[randInt];
-        let usedInt;
 
-        if (usedInt != randInt && randComp.level == "Silver" || randComp.level == "Gold") {
+
+        if (usedInt !== randInt && randComp.level == "Silver" || randComp.level == "Gold") {
             let name = document.createElement("h3");
             let number = document.createElement("p");
 
