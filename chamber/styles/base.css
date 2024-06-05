@@ -398,3 +398,27 @@ form {
 #list {
     padding: 10px 1rem;
 }
+
+#inviteBanner {
+    background-color: blue;
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 10px 0 10px 0;
+
+}
+
+
+#closeBanner {
+    font-size: 1rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+#closeBanner::before {
+    content: "❌";
+}
