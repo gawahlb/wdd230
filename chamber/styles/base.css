@@ -165,7 +165,7 @@ nav a:hover {
 .label span {
     border: 2px solid #000;
     font-size: 2rem;
-    background-color: rgba(166, 166, 166, 0.6);
+    background-color: rgba(0, 0, 0, 0.438);
     color: white;
 }
 
@@ -330,7 +330,7 @@ form {
 }
 
 .grid a {
-    font-size: .8rem;
+    font-size: .85vw;
 }
 
 .grid section {
