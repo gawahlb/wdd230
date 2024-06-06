@@ -11,26 +11,35 @@ let currentSave = new Date(document.lastModified);
 const options = { month: 'long', day: 'numeric', year: 'numeric' };
 let latestSave = currentSave.toLocaleDateString('en-us', options);
 let footerSaveDate = document.getElementById('lastModified');
-footerSaveDate.textContent = latestSave;
+
+if (footerSaveDate !== null) {
+    footerSaveDate.textContent = latestSave;
+}
 
 
 document.addEventListener('DOMContentLoaded', () => {
     let visitDisp = document.querySelector(".visits");
     const msToDays = 86400000;
-    const dateToday = new Date();
     const today = Date.now();
 
     let lastVisit = Number(window.localStorage.getItem("lastVisited"));
 
-    if (lastVisit == null) {
-        visitDisp.textContent = `Welcome! Let us know if you have any questions.`;
-    } else if ((today - lastVisit) < msToDays) {
-        visitDisp.innerText = "Back so soon? Awesome!";
-    } else {
-        let daysAgo = (today - lastVisit) / msToDays;
-        visitDisp.textContent = `You last visited ${daysAgo.toFixed(0)} days ago.`;
-    }
+    if (isNaN(lastVisit)) {
+        if (visitDisp) {
+            visitDisp.textContent = `Welcome! Let us know if you have any questions.`;
+        }
 
+    } else if ((today - lastVisit) < msToDays) {
+        if (visitDisp) {
+            visitDisp.textContent = "Back so soon? Awesome!";
+        }
+
+    } else {
+        if (visitDisp) {
+            let daysAgo = Math.floor((today - lastVisit) / msToDays);
+            visitDisp.textContent = `You last visited ${daysAgo} days ago.`;
+        }
+    }
 
     localStorage.setItem("lastVisited", today);
 
@@ -44,12 +53,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    title.onkeyup = titleValidation;
+    if (title) {
+        title.onkeyup = titleValidation;
+    }
 
     const date = new Date();
     const timestamp = document.querySelector("#timestamp");
 
-    timestamp.textContent = date;
+    if (timestamp) {
+        timestamp.textContent = date;
+    }
 
 });
 
@@ -78,6 +91,7 @@ async function apiFetch() {
 }
 
 function displayResults(data) {
+
     currentWeather.innerHTML = `Current Temp - ${data.list[0].main.temp}&deg;F`;
 
     let desc = data.list[0].weather[0].description;
@@ -123,7 +137,6 @@ const displayComp = (companies) => {
         let randInt = getRandomIntInclusive(0, 6);
         let randComp = companies[randInt];
 
-
         if (usedInt !== randInt && randComp.level == "Silver" || randComp.level == "Gold") {
             let name = document.createElement("h3");
             let number = document.createElement("p");
@@ -138,16 +151,17 @@ const displayComp = (companies) => {
         };
 
     };
-};
+}
+
 
 const date = new Date();
 let day = date.getDay();
 
-if (day == 1 || day == 2 || day == 3) {
+const banner = document.querySelector('#inviteBanner');
+const close = document.querySelector('#closeBanner');
+const msg = document.querySelector('#bannerMsg');
 
-    const banner = document.querySelector('#inviteBanner');
-    const close = document.querySelector('#closeBanner');
-    const msg = document.querySelector('#bannerMsg');
+if (day == 1 || day == 2 || day == 3) {
 
     msg.textContent = ` Join us this Wednesday at 7:00 PM for a Chamber of
     Commerce meet
@@ -158,4 +172,6 @@ if (day == 1 || day == 2 || day == 3) {
     close.addEventListener("click", function () {
         banner.style.display = 'none';
     });
+} else {
+    banner.style.display = 'none';
 }
